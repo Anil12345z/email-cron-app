@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.status {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.status .running {
+  color: green;
+  font-weight: bold;
+}
+
+.status .stopped {
+  color: red;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.logs {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.logs h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.logs ul {
+  list-style: none;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.logs li {
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.logs .success {
+  color: green;
+}
+
+.logs .error {
+  color: red;
+}
+
+.error-message {
+  background-color: #ffe6e6;
+  color: red;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .container {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .status {
+    font-size: 16px;
+  }
+
+  .logs h2 {
+    font-size: 18px;
+  }
+
+  .logs li {
+    font-size: 12px;
+  }
+
+  .error-message {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .container {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  button {
+    padding: 12px 25px;
+    font-size: 15px;
+  }
+
+  .error-message {
+    font-size: 15px;
+  }
+}
